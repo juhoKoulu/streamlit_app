@@ -1,3 +1,4 @@
 mysqlclient
 SQLAlchemy
 scipy
+mysql-connector-python
