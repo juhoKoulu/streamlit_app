@@ -4,3 +4,6 @@ address = "127.0.0.1"
 baseUrlPath = "/data-analysis"
 enableCORS = false
 enableXsrfProtection = false
+
+[theme]
+base = "dark"
