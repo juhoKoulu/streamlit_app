@@ -16,9 +16,9 @@ df["timestamp"] = pd.to_datetime(df["timestamp"])
 # Sort by timestamp ascending for plotting
 df = df.sort_values("timestamp")
 
-st.title("Säädata Helsingistä")
-st.dataframe(df)
-
 # Line chart for temperature
 st.subheader("Temperature Over Time")
 st.line_chart(df.set_index("timestamp")["temperature"])
+
+st.title("Säädata Helsingistä")
+st.dataframe(df)
