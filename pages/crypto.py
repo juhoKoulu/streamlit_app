@@ -7,7 +7,7 @@ mysql_user = os.getenv("MYSQL_USER");
 mysql_password = os.getenv("MYSQL_PASSWORD");
 
 conn = mysql.connector.connect(host='localhost', user=mysql_user, password=mysql_password, database='crypto_db')
-df = pd.read_sql('SELECT * FROM exchange_rate ORDER BY timestamp DESC LIMIT 50', conn)
+df = pd.read_sql('SELECT * FROM exchange_rate WHERE coin="XMR" ORDER BY timestamp DESC LIMIT 50', conn)
 conn.close()
 
 # Ensure timestamp is a datetime
